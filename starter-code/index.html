@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Meet landing page</title>
 </head>
+
 <body>
-  <h1>Group Chat for Everyone</h1>
-  <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+<div class="wrapper">
+  <div id="logo"></div>
 
-  <button>Download v1.3</button>
-  <button>What is it?</button>
+  <div class="container">
+    <img src="../starter-code/assets/desktop/image-hero-left.png" alt="Individual's profile photos on the left"
+      class="hero-left">
+    <div class="top-box">
+      <h1>Group Chat for Everyone</h1>
+      <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
 
+      <button class="download-button">Download <span>v1.3</span></button>
+      <button class="info-button">What is it?</button>
+    </div>
+    <img src="../starter-code/assets/desktop/image-hero-right.png" alt="Individual's profile photos on the right"
+      class="hero-right">
+  </div>
   <span>01</span>
-   <p>Built for modern use</p>
 
-  <h2>Smarter meetings, all in one place</h2>
+  <div class="middle-box">
+    <p>Built for modern use</p>
 
-  <p>Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+    <h2>Smarter meetings, all in one place</h2>
+
+    <p>Send messages, share files, show your screen, and record your meetings — all in one
+      workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+  </div>
 
   <span>02</span>
-  <h2>Experience more together</h2>
-  <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
 
-  <button> Download v1.3</button>
+  <div class="end-box">
+    <h2>Experience more together</h2>
+    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+
+    <button class="end-download-btn"> Download <span class="end-btn">v1.3</span> </button>
+  </div>
+
+</div>
 </body>
+
 </html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* border: black 1px solid; */
+    margin: 0 auto;
+    max-height: 100vh;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper{
+    min-width: 960px;
+    max-width: 1440px;
+
+}
+
+/* Below I learned that I can add images through css instead of adding the images in HTML file. */
+/* To add to this, I cannot add images like the hero images in CSS file, I will have to have a HTML img tag to add the hero images */ 
+/* Additionally, I have a strong understanding of the difference between margin and padding now (REF: https://www.geeksforgeeks.org/css-margins-padding/) */
+ 
+#logo {
+    background: url("../starter-code/assets/logo.svg") no-repeat;
+   width: 118px;
+   height: 68px;
+   margin-left: 48%;
+   margin-top: 40px;
+}
+
+.container{
+    height: 408px;
+}
+.hero-left{
+    float: left;
+    height: 290px;
+    
+}
+
+.hero-right{
+    float: right;
+    margin-top: -25%;
+    margin-right: 20px;
+    height: 290px;
+    
+}
+
+.top-box {
+    width: 504px;
+    height: 340px;
+    margin-left: 35%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0 25px 15px 25px;
+    color: #28283D;
+}
+
+.top-box p{
+    margin: 0;
+    padding-bottom:15px;
+}
+
+/* Here I initially has .download-button underneath the button selector and I was trying to override the padding to the .download-button as I have it in the button selector and I learned that in order to override CSS, I have to put it above button. (REF: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity, https://www.w3docs.com/snippets/css/how-to-override-css-styles.html) */
+.download-button{
+    background-color: #4D96A9;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+button{
+    color:#ffffff;
+    border-radius: 40px;
+    border: none;
+    padding: 18px 25px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.download-button span{
+    color: #8FE3F9;
+}
+.info-button{
+    background-color: #855FB1;
+    color: #ffffff;
+}
+
+.end-download-btn{
+    background-color: #855FB1;
+    color: #ffffff;
+}
+.end-btn{
+    color: #D9B8FF;
+}
+
+p{
+    color: #87879D;
+}
+
