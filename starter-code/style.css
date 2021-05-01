@@ -4,7 +4,7 @@
     box-sizing: border-box;
     /* border: black 1px solid; */
     margin: 0 auto;
-    max-height: 100vh;
+    
 }
 
 body{
@@ -15,7 +15,7 @@ body{
 
 .wrapper{
     min-width: 960px;
-    max-width: 1440px;
+    max-width: 2048px;
 
 }
 
@@ -27,35 +27,89 @@ body{
     background: url("../starter-code/assets/logo.svg") no-repeat;
    width: 118px;
    height: 68px;
-   margin-left: 48%;
+   margin-left: 45%;
    margin-top: 40px;
 }
 
-.container{
-    height: 408px;
-}
 .hero-left{
     float: left;
     height: 290px;
-    
 }
 
 .hero-right{
     float: right;
-    margin-top: -25%;
-    margin-right: 20px;
+    margin-top: -20.3%;
     height: 290px;
     
 }
 
-.top-box {
+
+/* Each section of the page */
+.container-1{
+    padding-bottom: 40px;
+    min-width: 960px;
+    max-width:1500px;
+}
+.top-box{
     width: 504px;
     height: 340px;
-    margin-left: 35%;
-    margin-bottom: 60px;
+    margin-left: 33%;
     text-align: center;
 }
 
+.container, .container-3{
+    min-width: 960px;
+    max-width:1500px;
+       
+}
+
+.middle-box{
+    width: 504px;
+    height: 250px;
+    margin-left: 33%;
+    text-align: center;
+}
+/* Struggled with image overlay and flexbox */
+
+.container-3{
+    height: 308px;
+    color: #ffffff;
+    background:  url("../starter-code/assets/desktop/image-footer.jpg") no-repeat top center;
+   
+}
+.end-box{
+    background-color: #4D96A9;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+.flexbox-container{
+    display: flex;  
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.flex-items{
+    width: 500px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.flex-items p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+    /* width: 440px;
+    padding-right: 100px; */
+}
+
+
+
+
+/* End of each section of page */
 
 h1{
     font-size: 64px;
@@ -65,9 +119,27 @@ h1{
     color: #28283D;
 }
 
+h2{
+    font-size: 40px;
+}
+.container h2{
+    font-weight: 900;
+    text-align: center;
+    padding: 0 40px 28px 40px;
+}
+
 .top-box p{
     margin: 0;
-    padding-bottom:15px;
+    padding-bottom:60px;
+}
+
+.container p:first-child{
+    text-transform: uppercase;
+    color: #4D96A9;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 5px;
+    font-size: 14px;
 }
 
 /* Here I initially has .download-button underneath the button selector and I was trying to override the padding to the .download-button as I have it in the button selector and I learned that in order to override CSS, I have to put it above button. (REF: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity, https://www.w3docs.com/snippets/css/how-to-override-css-styles.html) */
@@ -77,15 +149,28 @@ h1{
     padding-right: 40px;
 }
 
-button{
-    color:#ffffff;
+a{
+
     border-radius: 40px;
     border: none;
     padding: 18px 25px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 100px;
     font-weight: bold;
     font-size: 16px;
+}
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #ffffff;
+    text-decoration: #ffffff;
 }
 
 .download-button span{
@@ -99,12 +184,81 @@ button{
 .end-download-btn{
     background-color: #855FB1;
     color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+
 .end-btn{
     color: #D9B8FF;
 }
 
 p{
     color: #87879D;
+}
+
+/* Here we are making sure that there is spacing applied within the container above the lines with the circle */
+.container-2{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: #87879D;
+}
+
+/* We are setting the lines to be positions relative here because we need to addd an absolute position element 
+which are our shadow class elements the before and after. It will not expand the outside (REF: https://www.youtube.com/watch?v=mjDek0d1kak) */
+.lines{
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+/* absolute position applied here  */
+.lines::after, .lines::before{
+    content:"";
+    position: absolute;
+    margin: auto;
+    height: .3px;
+    background: #87879D;
+    width: 25%;
+    top: 45%;
+}
+
+/* create the horizontal lines here */
+/* left line */
+.lines::after{
+    left:15%;
+}
+/* right line */
+.lines::before{
+    right: 15%;
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    border: .5px solid #87879D;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius:50% ;
+    padding-left: 10px;
+    padding-top: 6.5px;
+}
+
+/* Middle images */
+
+.box-images{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left:90px ;
+    width: 1200px;
+}
+
+.middle-images{
+    width: 252px;
+    height: 242px;
+    padding: 8px;
+    border-radius: 10px;
 }
 
