@@ -30,6 +30,13 @@ body {
     margin-top: 40px;
 }
 
+.box-1{
+    margin-top:15%;
+    margin-right: 40%;
+    width: 200px;
+    color: black;
+}
+
 .hero-left {
     float: left;
     height: 290px;
@@ -73,7 +80,7 @@ body {
 .container-3 {
     height: 308px;
     color: #ffffff;
-    background: url("../starter-code/assets/desktop/image-footer.jpg") no-repeat top center;
+    background: url("../starter-code/assets/desktop/image-footer.jpg") no-repeat top center ;
 }
 
 .end-box {
@@ -100,8 +107,7 @@ body {
     color: #ffffff;
     font-size: 18px;
     line-height: 26px;
-    /* width: 440px;
-    padding-right: 100px; */
+
 }
 
 /* End of each section of page */
@@ -265,5 +271,58 @@ which are our shadow class elements the before and after. It will not expand the
     width: 252px;
     height: 242px;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
+section{
+        padding-bottom: 40px;
+        padding-top: 20px;
+        max-width: 1500px;
+        padding-right: 40px;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+
+}
+
+section img{
+    width: 502px;
+    height: 420px;
+    border-radius: 10px;
+    margin:0 100px;
+    padding-top: 30px;
+}
+
+section li{
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+ul{
+    margin:0 ;
+}
+
+.middle-image{
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.right-image{
+    margin-right: 20px;
+}
+
+header h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 180px;
+    letter-spacing: 5px;
+    /* text-transform: uppercase; */
+
+} 
+
+.about-banner{
+        color: #ffffff;
+        background: url("./starter-code/assets/women-virtual-meeting.jpg") no-repeat center 50%;
+      
+}
+
