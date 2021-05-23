@@ -348,7 +348,7 @@ li{
 
 /* First section of join page */
 .join-container{
-    width: 40%;
+    width: 35%;
    display: block;
    margin: 8% 34%;
    border-radius: 40px;
@@ -372,12 +372,12 @@ li{
     padding-left: 10px;
 }
 #join{
-    width: 80%;
+    width: 100%;
     border-radius: 40px;
 }
 
 .join-btn{
-    width: 80%;
+    width: 100%;
     border-radius: 40px;
     background-color: #855FB1;
     border-style: none;
@@ -463,3 +463,87 @@ li{
 
 /* End of host a meeting page */
 /* First section of sign in */
+.sign-in-container{
+        width: 40%;
+       display: block;
+       margin: 5% 30%;
+       border-radius: 40px;
+       box-shadow: 5px 5px 5px 5px rgba(150, 150, 150, 0.411);
+       background-color: rgb(248, 248, 248);
+       padding:45px 100px;
+    
+}
+
+.sign-in-btn{
+        width: 45%;
+        border-radius: 40px;
+        background-color: #4D96A9;
+        border-style: none;
+        margin-top: 15px;
+}
+
+.sign-in-container h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 900;
+}
+
+.sign-in-label{
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.sign-in-btn{
+    border-radius: 40px;
+    background-color: #855FB1;
+    border-style: none;
+    
+}
+
+.sign-in-btn:hover{
+    text-decoration: none;
+    background-color: #855FB1;
+}
+
+
+/* End of sign in page */
+/* First section of contact page */
+.contact-container{
+    width: 40%;
+    display: block;
+    margin: 3% 30%;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 5px rgba(150, 150, 150, 0.411);
+    background-color: rgb(248, 248, 248);
+    padding:45px 100px;
+}
+.contact-container h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 900;
+}
+
+.col{
+    padding: 25px 15px;
+}
+.col-md{
+    padding-bottom: 25px;
+}
+
+.contact-btn{
+        width: 40%;
+        border-radius: 40px;
+        background-color: #4D96A9;
+        border-style: none;
+        margin-top: 8%;
+    }
+    
+    .contact-btn:hover{
+        text-decoration: none;
+        background-color: #4D96A9;
+    }
+    
