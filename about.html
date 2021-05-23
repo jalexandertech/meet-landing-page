@@ -2,77 +2,141 @@
 <html lang="en">
 
 <head>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Frontend Mentor | What is it?</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | About Us</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <a href="index.html">
-            <div id="logo"></div>
-        </a>
-        <div class="about-banner">
-            <div class="end-box">
-                <header>
-                    <h1>What is it?</h1>
-                </header>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <div id="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="join.html">Join a meeting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="host.html">Host a meeting</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <main>
-            <section>
-                <img src="./starter-code/assets/man-on-video-call-with-woman.jpg" alt="Man on a video call with woman">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>Morbi lobortis nisl sed velit bibendum, ut sollicitudin justo ultrices.
-                    </li>
-                    <li>Proin fermentum augue vitae cursus maximus.
-                    </li>
-                </ul>
-            </section>
-            <section class="middle-image">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>Morbi lobortis nisl sed velit bibendum, ut sollicitudin justo ultrices.
-                    </li>
-                </ul>
-                <img src="./starter-code/assets/woman-and-man-on-video-call.jpg" alt="Woman and man on video call" class="right-image">
-            </section>
-            <section>
-                <img src="./starter-code/assets/man-on-video-call-with-woman-2.jpg" alt="Man on video call with woman">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </li>
-                    <li>Morbi lobortis nisl sed velit bibendum, ut sollicitudin justo ultrices.
-                    </li>
-                    <li>Proin fermentum augue vitae cursus maximus.
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <div class="container-3">
-            <div class="end-box">
-                <div class="flexbox-container">
-                    <div class="flex-items">
-                        <h2>Experience more together</h2>
+    </nav>
+    <header>
+        <h1 class="about-header">About Us</h1>
+    </header>
+    <main>
+        <!-- First section -->
+        <section class="about-top">
+            <h2>Who Are We?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <p>At elementum eu facilisis sed odio morbi quis commodo. Sagittis vitae et leo duis ut diam quam nulla.
+                Volutpat odio facilisis mauris sit amet massa vitae. Tempus urna et pharetra pharetra.</p>
+
+        </section>
+        <!-- Second section -->
+        <section class="about-middle">
+            <h2>Why Meet?</h2>
+            <ul>
+                <li>
+                    <span class="uppercase-unlimited">Unlimited</span> video conferencing
+                </li>
+                <li>
+                    Connect with others face-to-face virtually
+                </li>
+                <li>
+                    Collaborate across any device
+                </li>
+                <li>
+                Control who can join with invite-only team access, data encryption, and data export.
+                </li>
+            </ul>
+        </section>
+        <section class="about-end">
+            <h2>Meet the Team</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/starter-code/assets/desktop/pexels-christina-morillo-1181690.jpg"
+                            class="card-img-top first-card" alt="woman smiling sitting down in an office chair">
+                        <div class="card-body">
+                            <h5 class="card-title">Marie Camille</h5>
+                            <p class="card-text">Founder & CEO</p>
+                        </div>
                     </div>
-                    <div class="flex-items">
-                        <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-                        </p>
-                    </div>
-                    <div class="flex-items"> <a href="../assets/mobile/download-meet.png" class="end-download-btn"
-                            download="download-meet.png">
-                            Download <span class="end-btn">v1.3</span> </a></div>
                 </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./starter-code/assets/desktop/pexels-christina-morillo-1181519.jpg" class="card-img-top"
+                            alt="woman smiling with a whiteboard behind her">
+                        <div class="card-body">
+                            <h5 class="card-title">Chrysanta Charlie</h5>
+                            <p class="card-text">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./starter-code/assets/desktop/pexels-mentatdgt-937481.jpg" class="card-img-top"
+                            alt="man smiling leaning on a wall in a business suit">
+                        <div class="card-body">
+                            <h5 class="card-title">Moe Henderson</h5>
+                            <p class="card-text">Sales Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Third section -->
+    <div class="end-box-section">
+        <div class="end-box">
+            <div class="flexbox-container">
+                <div class="flex-items">
+                    <h2>Experience more together</h2>
+                </div>
+                <div class="flex-items">
+                    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+                </div>
+                <div class="flex-items"> <a href="#" class="end-download-btn" onclick="downloadButton()">
+                        Download <span class="end-btn">v1.3</span> </a></div>
             </div>
         </div>
     </div>
+    </div>
+    <!-- Bootstrap jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

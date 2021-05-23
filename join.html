@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Join a Meeting</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <div id="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="join.html">Join a meeting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="host.html">Host a meeting</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Form -->
+        <section class="join-container">
+            <h2>Join Meeting</h2>
+            <form>
+                <div class="mb-3">
+                  <label for="join" class="join-label">Meeting ID or Personal Link Name</label>
+                  <input type="text" class="form-control" id="join" placeholder="Meeting ID or Personal Link Name" required>
+                </div>
+                <button type="submit" class="btn btn-primary join-btn">Join</button>
+              </form>
+        </section>
+    </main>
+    <!-- Illustration -->
+    <div class="container">
+        <div class="join-illustration">
+            <img src="./starter-code/assets/undraw_remote_meeting_cbfk.svg" alt="remote meeting">
+        </div>
+    </div>
+</body>

@@ -1,116 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap');
-* {
-    box-sizing: border-box;
-    /* border: black 1px solid; */
-    margin: 0 auto;
-}
-
-body {
-    background-color: #fafafa;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 18px;
-}
-
-.wrapper {
-    min-width: 960px;
-    max-width: 2048px;
-}
-
 /* Below I learned that I can add images through css instead of adding the images in HTML file. */
 
 /* To add to this, I cannot add images like the hero images in CSS file, I will have to have a HTML img tag to add the hero images */
 
 /* Additionally, I have a strong understanding of the difference between margin and padding now (REF: https://www.geeksforgeeks.org/css-margins-padding/) */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-width: 960px;
+    max-width: 1440px;
+}
+
+/* Navigation bar */
+.navbar{
+    box-shadow: 5px 3px 5px 5px rgba(0, 0, 0, 0.048);
+    height: 60px;
+    width: 100vw;
+    padding-bottom: 80px;
+}
+.nav-right{
+   position: relative;
+   left: 50%;
+}
+
 #logo {
     background: url("../starter-code/assets/logo.svg") no-repeat;
     width: 118px;
     height: 68px;
-    margin-left: 45%;
-    margin-top: 40px;
+    margin-top: 35px;
 }
-
-.box-1{
-    margin-top:15%;
-    margin-right: 40%;
-    width: 200px;
-    color: black;
-}
-
-.hero-left {
-    float: left;
-    height: 290px;
-}
-
-.hero-right {
-    float: right;
-    margin-top: -20.3%;
-    height: 290px;
-}
-
-/* Each section of the page */
-
-.container-1 {
-    padding-bottom: 40px;
-    min-width: 960px;
-    max-width: 1500px;
-}
-
-.top-box {
-    width: 504px;
-    height: 340px;
-    margin-left: 33%;
-    text-align: center;
-}
-
-.container, .container-3 {
-    min-width: 960px;
-    max-width: 1500px;
-}
-
-.middle-box {
-    width: 504px;
-    height: 250px;
-    margin-left: 33%;
-    text-align: center;
-}
-
-/* Struggled with image overlay and flexbox */
-
-.container-3 {
-    height: 308px;
-    color: #ffffff;
-    background: url("../starter-code/assets/desktop/image-footer.jpg") no-repeat top center ;
-}
-
-.end-box {
+.active{
     background-color: #4D96A9;
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
+    border-radius: 0;
 }
 
-.flexbox-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+/* First Section of home page */
+.top-box-section {
+    padding: 40px 55px;
+   width: 100vw;
+   margin: 0;
 }
-
-.flex-items {
-    width: 500px;
-    text-align: left;
-    padding-left: 100px;
-}
-
-.flex-items p {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 26px;
-
-}
-
-/* End of each section of page */
 
 h1 {
     font-size: 64px;
@@ -120,39 +63,56 @@ h1 {
     color: #28283D;
 }
 
-h2 {
-    font-size: 40px;
-}
-
-.container h2 {
-    font-weight: 900;
+.box-text {
+    padding-top: 65px;
+    width: 60%;
+    height: 400px;
     text-align: center;
-    padding: 0 40px 28px 40px;
 }
 
-.top-box p {
+.hero-right {
+   width: 55%;
+    height: 15%;
+   
+}
+
+.hero-left {
+    width: 55%;
+    height: 15%;
+}
+
+.box-text p {
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
-
-.container p:first-child {
-    text-transform: uppercase;
-    color: #4D96A9;
-    font-weight: 900;
-    line-height: 35px;
-    letter-spacing: 5px;
-    font-size: 14px;
-}
-
-/* Here I initially has .download-button underneath the button selector and I was trying to override the padding to the .download-button as I have it in the button selector and I learned that in order to override CSS, I have to put it above button. (REF: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity, https://www.w3docs.com/snippets/css/how-to-override-css-styles.html) */
 
 .download-button {
     background-color: #4D96A9;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 25px;
+}
+.download-button span {
+    color: #8FE3F9;
 }
 
-a {
+.about-button {
+    background-color: #855FB1;
+    color: #ffffff;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+section{
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+
+/* Links */
+a  {
     border-radius: 40px;
     border: none;
     padding: 18px 25px;
@@ -177,40 +137,13 @@ a:visited {
     text-decoration: #ffffff;
 }
 
-.download-button span {
-    color: #8FE3F9;
-}
-
-.info-button {
-    background-color: #855FB1;
-    color: #ffffff;
-}
-
-.end-download-btn {
-    background-color: #855FB1;
-    color: #ffffff;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.end-btn {
-    color: #D9B8FF;
-}
-
-p {
-    color: #87879D;
-}
-
-/* Here we are making sure that there is spacing applied within the container above the lines with the circle */
-
-.container-2 {
+/* Lines */
+.container-lines {
     padding-top: 50px;
     padding-bottom: 40px;
     color: #87879D;
+    width: 100vw;
 }
-
-/* We are setting the lines to be positions relative here because we need to addd an absolute position element 
-which are our shadow class elements the before and after. It will not expand the outside (REF: https://www.youtube.com/watch?v=mjDek0d1kak) */
 
 .lines {
     width: 100%;
@@ -218,7 +151,6 @@ which are our shadow class elements the before and after. It will not expand the
     position: relative;
 }
 
-/* absolute position applied here  */
 
 .lines::after, .lines::before {
     content: "";
@@ -235,13 +167,13 @@ which are our shadow class elements the before and after. It will not expand the
 /* left line */
 
 .lines::after {
-    left: 15%;
+    left: 8%;
 }
 
 /* right line */
 
 .lines::before {
-    right: 15%;
+    right: 8%;
 }
 
 .circle {
@@ -252,19 +184,18 @@ which are our shadow class elements the before and after. It will not expand the
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin-left: 50%;
     border-radius: 50%;
-    padding-left: 10px;
+    padding-left: 8.8px;
     padding-top: 6.5px;
 }
 
-/* Middle images */
-
-.box-images {
+/* Images */
+.image-container {
     padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 90px;
-    width: 1200px;
+    margin-left: 18%;
+    width: 100vw;
 }
 
 .middle-images {
@@ -274,55 +205,261 @@ which are our shadow class elements the before and after. It will not expand the
     border-radius: 15px;
 }
 
-section{
-        padding-bottom: 40px;
-        padding-top: 20px;
-        max-width: 1500px;
-        padding-right: 40px;
-        margin-left: 40px;
-        display: flex;
-        align-items: center;
-
-}
-
-section img{
-    width: 502px;
-    height: 420px;
-    border-radius: 10px;
-    margin:0 100px;
-    padding-top: 30px;
-}
-
-section li{
-    font-size: 20px;
-    padding-top: 70px;
-    padding-bottom: 20px;
-}
-ul{
-    margin:0 ;
-}
-
-.middle-image{
-    padding-left: 100px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.right-image{
-    margin-right: 20px;
-}
-
-header h1{
-    color: #ffffff;
+/* Second section of home page */
+.middle-box-section {
+    width: 504px;
+    height: 300px;
+    margin-left: 38%;
     text-align: center;
-    padding: 180px;
-    letter-spacing: 5px;
-    /* text-transform: uppercase; */
+}
 
+h2 {
+    font-size: 40px;
+}
+
+.middle-box h2 {
+    font-weight: 900;
+    text-align: center;
+    padding: 0 40px 28px 40px;
+}
+
+.middle-box p:first-child {
+    text-transform: uppercase;
+    color: #4D96A9;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+/* Third Section of home page */
+.end-box-section {
+    height: 308px;
+    color: #ffffff;
+    background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.end-box {
+    background-color: #4D96A9;
+    opacity: 0.9;
+    height: 100%;
+    width: 150%;
+   margin: 0;
+}
+
+.flexbox-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-items {
+    width: 500px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.flex-items p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 26px;
+
+}
+
+.end-download-btn {
+    background-color: #855FB1;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.end-btn {
+    color: #D9B8FF;
+}
+
+p, ul{
+    color: #87879D;
+}
+
+/* End of homepage */
+
+
+/* Start of About us page */
+/* First Section */
+
+.about-header{
+    text-align: center;
+    padding: 40px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 80%
+}
+
+.about-header::before, .about-header::after{
+        display: block;
+        height: 2px;
+        background-color: #4D96A9;
+        content: " ";
+}
+
+
+header{
+    background-image: url("./starter-code/assets/desktop/pexels-gustavo-fring-4173169.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.about-top, .about-middle, .about-end{
+    display: block;
+    padding: 35px 0;
+   margin-left: 5%;
+}
+
+.about-top h2{
+    font-weight: 900;
+}
+.about-middle h2{
+    font-weight: 900;
+}
+.about-end h2{
+    font-weight: 900;
+}
+.about-top{
+   margin-left: 5%;
+}
+
+li{
+    padding: 10px 0;
+}
+.uppercase-unlimited{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.about-end{
+    margin-right: 5%;
+}
+
+/* End of about page */
+
+/* First section of join page */
+.join-container{
+    width: 40%;
+   display: block;
+   margin: 8% 34%;
+   border-radius: 40px;
+   box-shadow: 5px 5px 5px 5px rgba(150, 150, 150, 0.411);
+   background-color: rgb(248, 248, 248);
+   padding:45px 100px;
+
+}
+
+.join-container h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 900;
+}
+
+.join-label{
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+#join{
+    width: 80%;
+    border-radius: 40px;
+}
+
+.join-btn{
+    width: 80%;
+    border-radius: 40px;
+    background-color: #855FB1;
+    border-style: none;
+    
+}
+
+.join-btn:hover{
+    text-decoration: none;
+    background-color: #855FB1;
+}
+
+
+.join-illustration{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+}
+
+.join-illustration img{
+    width: 70%;
 } 
 
-.about-banner{
-        color: #ffffff;
-        background: url("./starter-code/assets/women-virtual-meeting.jpg") no-repeat center 50%;
-      
+/* End of join a meeting page */
+/* First section of host page */
+.host-container{
+    width: 40%;
+   display: block;
+   margin: 8% 34%;
+   border-radius: 40px;
+   box-shadow: 5px 5px 5px 5px rgba(150, 150, 150, 0.411);
+   background-color: rgb(248, 248, 248);
+   padding:45px 100px;
+
 }
 
+.host-container h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 900;
+}
+
+.host-label{
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+#host{
+    width: 80%;
+    border-radius: 40px;
+}
+
+.host-btn{
+    width: 45%;
+    border-radius: 40px;
+    background-color: #4D96A9;
+    border-style: none;
+    margin-top: 15px;
+}
+
+.host-btn:hover{
+    text-decoration: none;
+    background-color: #4D96A9;
+}
+
+
+.host-illustration{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: -1;
+}
+
+.host-illustration img{
+    width: 70%;
+} 
+
+.form-check-label{
+    font-size: 15px;
+}
+
+/* End of host a meeting page */
+/* First section of sign in */
